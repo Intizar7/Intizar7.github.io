@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitHub Pages</title>
+<style>
+
+.oval{
+
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+}
+
+</style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/afc192269e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="card mx-auto" style="width: 18rem; text-align: center">
+            <div class="card-body">
+                <h5 class="card-title">Intizar Najimaddinova</h5>
+                <p class="card-text">Software Engineer</p>
+            </div>
+           
+            <div class="oval" style="margin: 0 auto">
+                <img src="profile.jpeg" alt="Intizar Najimaddinova" style="width:100%">
+            </div>
+           
+            <div class="card-body">
+                <div>
+                   <a href="https://medium.com/@najimaddinova"><i class="fab fa-medium fa-2x"></i></a> 
+                    <a href="https://github.com/Intizar7"><i class="fab fa-github-square fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/najimaddinova/"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+                <div>
+                    <p id="date"></p>
+                </div>
+            </div>
+        </div>
+        <script>
+            var today = new Date();
+            var dd = ("0" + today.getDate()).slice(-2)
+            var mm = ("0" + (today.getMonth() + 1)).slice(-2)
+            var yyyy = today.getFullYear();
+
+            document.getElementById("date").innerHTML = mm + "." + dd + "." + yyyy;
+
+        </script>
+    </div>
+</body>
+
+</html>
